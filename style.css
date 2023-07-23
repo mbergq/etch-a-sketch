@@ -23,11 +23,12 @@ html, body {
     align-items: center;
 }
 
+/* 32 squares of 16*16 should fit inside this grid box */
 #gridWrapper {
     background-color: bisque;
 
-    height: 400px;
-    width: 400px;
+    height: 512px;
+    width: 512px;
 }
 
 .square {
