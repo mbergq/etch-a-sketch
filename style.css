@@ -29,7 +29,11 @@ html, body {
 
     height: 512px;
     width: 512px;
+
+    display: flex;
+    flex-wrap: wrap;
 }
+
 
 .square {
     margin: 0;
@@ -38,5 +42,7 @@ html, body {
     height: 16px;
     width: 16px;
 
-    border-style: solid;
+    outline: 1px solid black;
+
+
 }
