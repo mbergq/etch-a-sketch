@@ -9,16 +9,7 @@ const gridWrapper = document.querySelector('#gridWrapper');
 
 
 //Multiple box-generator code
-var boxes = ["","","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx",
-"bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx",
-"bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx",
-"bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx",
-"bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx",
-"bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx",
-"bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx",
-"bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx",
-"bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx",
-"bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx","bx",];
+var boxes = new Array(1024).fill(['']).flat();
 
 boxes.forEach(function(el) {
     var div = document.createElement('div');
@@ -26,4 +17,5 @@ boxes.forEach(function(el) {
     div.innerHTML = el;
     gridWrapper.appendChild(div);
 
-})
+});
+
