@@ -17,15 +17,15 @@ html, body {
     height: 100vh;
     width: 100vw;
 
-    background-color: blueviolet;
+    background-color: rgb(112, 158, 191);
 
     justify-content: center;
     align-items: center;
 }
 
-/* 32 squares of 16*16 should fit inside this grid box */
+
 #gridWrapper {
-    background-color: bisque;
+    background-color: rgba(255, 255, 255, 0.53);
 
     height: 512px;
     width: 512px;
@@ -43,6 +43,5 @@ html, body {
     width: 16px;
 
     outline: 1px solid black;
-
 
 }

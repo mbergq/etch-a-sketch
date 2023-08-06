@@ -1,7 +1,6 @@
 const container = document.querySelector('#container');
 const gridWrapper = document.querySelector('#gridWrapper');
 
-
 //Noting that code below did not work unless i used "querySelector-above"
 //const square = document.createElement('div');
 //square.classList.add('square');
@@ -9,7 +8,7 @@ const gridWrapper = document.querySelector('#gridWrapper');
 
 
 //Multiple box-generator code
-var boxes = new Array(1024).fill(['']).flat();
+let boxes = new Array(1024).fill(['']).flat();
 
 boxes.forEach(function(el) {
     var div = document.createElement('div');
@@ -19,3 +18,12 @@ boxes.forEach(function(el) {
 
 });
 
+let squares = document.querySelectorAll('.square');
+
+squares.forEach(square => {
+    square.addEventListener('mouseover', function colorFiller(event) {
+        console.log('mouse hovered', event);
+
+        square.setAttribute('style', 'background-color: black;');
+    });
+})
