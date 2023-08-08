@@ -21,14 +21,16 @@ html, body {
 
     justify-content: center;
     align-items: center;
+
+    flex-direction: column;
 }
 
 
 #gridWrapper {
     background-color: rgba(255, 255, 255, 0.53);
 
-    height: 512px;
-    width: 512px;
+    height: 960px;
+    width: 960px;
 
     display: flex;
     flex-wrap: wrap;
@@ -44,4 +46,11 @@ html, body {
 
     outline: 1px solid black;
 
+}
+
+button {
+    flex-basis: auto;
+    margin-bottom: 82px;
+    
+    
 }

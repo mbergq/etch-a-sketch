@@ -8,7 +8,7 @@ const gridWrapper = document.querySelector('#gridWrapper');
 
 
 //Multiple box-generator code
-let boxes = new Array(1024).fill(['']).flat();
+let boxes = new Array(3600).fill(['']).flat();
 
 boxes.forEach(function(el) {
     var div = document.createElement('div');
@@ -18,12 +18,13 @@ boxes.forEach(function(el) {
 
 });
 
+//Function to change background color when hovered over each box
 let squares = document.querySelectorAll('.square');
 
 squares.forEach(square => {
-    square.addEventListener('mouseover', function colorFiller(event) {
-        console.log('mouse hovered', event);
-
+    square.addEventListener('mouseover', function colorFiller(e) {
+        
         square.setAttribute('style', 'background-color: black;');
     });
-})
+});
+
