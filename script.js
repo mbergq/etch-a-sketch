@@ -28,3 +28,10 @@ squares.forEach(square => {
     });
 });
 
+function gridGenerator() {
+    let promptInput  = prompt('Enter a whole number between 1 and 100', '');
+    return promptInput;
+};
+
+console.log(gridGenerator());
+console.log(isNaN(gridGenerator()));
