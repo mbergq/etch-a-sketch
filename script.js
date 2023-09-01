@@ -28,10 +28,5 @@ squares.forEach(square => {
     });
 });
 
-function gridGenerator() {
-    let promptInput  = prompt('Enter a whole number between 1 and 100', '');
-    return promptInput;
-};
-
-console.log(gridGenerator());
-console.log(isNaN(gridGenerator()));
+//function that collects number we need to know how big the grid will be
+const gridGenerator = () => prompt('Enter a whole number between 1 and 100');
